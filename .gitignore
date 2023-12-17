@@ -1,0 +1,12 @@
+#IDEs
+.idea/
+.vscode/
+
+# build output
+*.exe
+
+# log file
+*.log
+
+# node
+node_modules/
