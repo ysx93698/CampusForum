@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard-line-box">
+  <div class="dashboard-line-box hidden">
     <div class="dashboard-line-title">
       访问趋势
     </div>
@@ -7,7 +7,7 @@
       ref="echart"
       class="dashboard-line"
     />
-  </div>
+    </div>
 </template>
 <script setup>
 import * as echarts from 'echarts'

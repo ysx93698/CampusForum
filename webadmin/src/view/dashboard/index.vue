@@ -3,9 +3,9 @@
     <div class="gva-card-box">
       <div class="gva-card gva-top-card">
         <div class="gva-top-card-left">
-          <div class="gva-top-card-left-title">早安，管理员，请开始一天的工作吧</div>
+          <div class="gva-top-card-left-title">早安，{{ userStore.userInfo.nickName }}，请开始一天的工作吧</div>
           <div class="gva-top-card-left-dot">{{ weatherInfo }}</div>
-          <el-row class="my-8 w-[500px]">
+          <el-row class="my-8 w-[500px] hidden">
             <el-col
               :span="8"
               :xs="24"
@@ -44,7 +44,7 @@
             </el-col>
           </el-row>
           <div>
-            <div class="gva-top-card-left-item">
+            <div class="gva-top-card-left-item hidden">
               使用教学：
               <a
                 style="color:#409EFF"
@@ -52,7 +52,7 @@
                 href="https://www.bilibili.com/video/BV1Rg411u7xH/"
               >https://www.bilibili.com/video/BV1Rg411u7xH</a>
             </div>
-            <div class="gva-top-card-left-item">
+            <div class="gva-top-card-left-item hidden">
               插件仓库：
               <a
                 style="color:#409EFF"
@@ -129,13 +129,15 @@ import DashboardTable from '@/view/dashboard/dashboardTable/dashboardTable.vue'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useWeatherInfo } from '@/view/dashboard/weather.js'
-import SelectImage from '@/components/selectImage/selectImage.vue'
+import { useUserStore } from '@/pinia/modules/user';
+// import SelectImage from '@/components/selectImage/selectImage.vue'
 
 defineOptions({
   name: 'Dashboard'
 })
 
 const weatherInfo = useWeatherInfo()
+const userStore = useUserStore()
 
 const toolCards = ref([
   {
