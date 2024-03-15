@@ -1,6 +1,6 @@
 .idea/
-/web/node_modules
-/web/dist
+/webadmin/node_modules
+/webadmin/dist
 
 .DS_Store
 
@@ -25,6 +25,8 @@ yarn-error.log*
 /server/log/
 /server/gva
 /server/latest_log
+
+/server/config.local.yaml
 
 *.iml
 web/.pnpm-debug.log
