@@ -1,6 +1,8 @@
 .idea/
 /webadmin/node_modules
 /webadmin/dist
+/web/node_modules
+/web/dist
 
 .DS_Store
 
