@@ -1,11 +1,11 @@
-name: Sync with Upstream
+name: CI
 
 on:
     schedule:
         - cron: "0 */36 * * *"
 
 jobs:
-    sync:
+    sync with upstream:
         runs-on: ubuntu-latest
 
         steps:
