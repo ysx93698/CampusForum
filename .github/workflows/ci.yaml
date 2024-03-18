@@ -12,6 +12,9 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
 
+            - name: Set up upstream
+              run: git remote add upstream https://github.com/flipped-aurora/gin-vue-admin.git
+
             - name: Fetch upstream changes
               run: git fetch upstream
 
