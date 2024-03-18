@@ -29,6 +29,9 @@ yarn-error.log*
 /server/latest_log
 
 /server/config.local.yaml
+/server/config.dev.yaml
+
+*.exe
 
 *.iml
 web/.pnpm-debug.log
